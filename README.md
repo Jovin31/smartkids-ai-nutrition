@@ -72,12 +72,10 @@ The data is split into training and test sets using an 80:20 ratio with stratifi
 These results measure agreement with the dataset labels only. They do not establish medical accuracy or suitability for real-world health decisions.
 
 ## Project Structure
-
 ```text
 .
 ├── app_gizi.py
 ├── model.py
-├── model_backup.py
 ├── model_features.pkl
 ├── malnutrition_model_final.pkl
 ├── malnutrition_balanced_synthetic_dataset.csv
@@ -86,9 +84,8 @@ These results measure agreement with the dataset labels only. They do not establ
 ├── audit_dataset.py
 ├── audit_patterns.py
 ├── audit_model.py
-├── output/
-│   └── malnutrition_cleaned.csv
 ├── requirements.txt
+├── .gitignore
 └── README.md
 ```
 
