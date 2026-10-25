@@ -1,4 +1,4 @@
-
+﻿
 from pathlib import Path
 import pandas as pd
 
@@ -27,7 +27,7 @@ def extract_data():
     if not SOURCE_FILE.exists():
         raise FileNotFoundError(f"Source file not found: {SOURCE_FILE}")
 
-    df = pd.read_csv(SOURCE_FILE)
+    df = pd.read_csv(SOURCE_FILE, sep=";")
     print(f"[EXTRACT] Rows loaded: {len(df)}")
     return df
 
@@ -118,3 +118,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
