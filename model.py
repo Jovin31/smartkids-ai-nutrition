@@ -49,7 +49,7 @@ def load_dataset():
             f"Dataset tidak ditemukan: {DATA_FILE}"
         )
 
-    df = pd.read_csv(DATA_FILE)
+    df = pd.read_csv(DATA_FILE, sep=";")
 
     required_columns = FEATURES + [TARGET]
     missing_columns = [
