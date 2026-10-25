@@ -10,7 +10,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.metrics import accuracy_score, f1_score
 
 # 1. Load dataset
-df = pd.read_csv("malnutrition_balanced_synthetic_dataset.csv")
+df = pd.read_csv("malnutrition_balanced_synthetic_dataset.csv", sep=";")
 
 # 2. Siapkan fitur dan target
 features = ["Age_months", "Weight_kg", "Height_cm", "Gender"]
